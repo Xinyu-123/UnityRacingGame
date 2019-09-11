@@ -6,7 +6,7 @@ using TMPro;
 public class CountDown : MonoBehaviour
 {
     public GameObject Countdown, LapTimer, CarControls;
-    public AudioSource GetReady;
+    public AudioSource GetReady, LevelMusic;
     
     // Start is called before the first frame update
     void Start()
@@ -36,6 +36,8 @@ public class CountDown : MonoBehaviour
 
         LapTimer.SetActive(true);
         CarControls.SetActive(true);
+        LevelMusic.Play();
+
     }
 
 }

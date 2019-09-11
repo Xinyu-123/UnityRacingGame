@@ -6,7 +6,7 @@ using UnityEngine;
 public class LapTimeManager : MonoBehaviour
 {
     public static int MinuteCount, SecondCount;
-    public static float MilliCount;
+    public static float MilliCount, RawTime;
     public static string MilliDisplay;
 
     public GameObject MinuteBox, SecondBox, MilliBox;
@@ -15,6 +15,7 @@ public class LapTimeManager : MonoBehaviour
     void Update()
     {
         MilliCount += Time.deltaTime * 10;
+        RawTime += Time.deltaTime;
         MilliDisplay = MilliCount.ToString("F0");
         MilliBox.GetComponent<TextMeshProUGUI>().text = "" + MilliDisplay;
 

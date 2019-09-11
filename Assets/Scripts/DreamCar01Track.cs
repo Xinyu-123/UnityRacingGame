@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DreamCar01Track : MonoBehaviour
 {
-    public GameObject TheMarker, Mark01, Mark02, Mark03, Mark04, Mark05, Mark06, Mark07;
+    public GameObject TheMarker, Mark01, Mark02, Mark03, Mark04, Mark05, Mark06, Mark07, Mark08;
     public int MarkTracker;
 
 
@@ -34,6 +34,9 @@ public class DreamCar01Track : MonoBehaviour
             case 6:
                 TheMarker.transform.position = Mark07.transform.position;
                 break;
+            case 7:
+                TheMarker.transform.position = Mark08.transform.position;
+                break;
         }
 
     }
@@ -44,7 +47,7 @@ public class DreamCar01Track : MonoBehaviour
         {
             this.GetComponent<BoxCollider>().enabled = false;
             MarkTracker++;
-            if (MarkTracker == 7)
+            if (MarkTracker == 8)
                 MarkTracker = 0;
             yield return new WaitForSeconds(1);
             this.GetComponent<BoxCollider>().enabled = true;
