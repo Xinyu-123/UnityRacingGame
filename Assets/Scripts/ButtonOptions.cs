@@ -7,17 +7,17 @@ public class ButtonOptions : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
     public void TrackSelect()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void CharacterSelect()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     public void MainMenu()
@@ -33,7 +33,12 @@ public class ButtonOptions : MonoBehaviour
     //Below are Track Select Buttons
     public void Track01()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
+    }
+
+    public void Track02()
+    {
+        SceneManager.LoadScene(4);
     }
 
 }
