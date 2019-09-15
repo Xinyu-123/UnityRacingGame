@@ -12,7 +12,7 @@ public class LapComplete : MonoBehaviour
 
     public int Laps;
 
-    public static float RawTime;
+    public float RawTime;
 
 
 
@@ -26,7 +26,7 @@ public class LapComplete : MonoBehaviour
     private void OnTriggerEnter()
     {
         RawTime = PlayerPrefs.GetFloat("RawTime");
-        if(LapTimeManager.RawTime < RawTime || RawTime == 0)
+        if(LapTimeManager.RawTime < RawTime)
         {
             if (LapTimeManager.MinuteCount <= 9)
             {
