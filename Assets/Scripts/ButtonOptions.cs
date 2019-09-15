@@ -5,19 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class ButtonOptions : MonoBehaviour
 {
-    public void PlayGame()
+    public void RandomGame()
     {
         SceneManager.LoadScene(3);
     }
 
-    public void TrackSelect()
+    public void SelectTrack()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void CharacterSelect()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void MainMenu()
