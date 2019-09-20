@@ -10,11 +10,11 @@ public class GlobalCar : MonoBehaviour
 
     public void RedCar()
     {
-        CarType = 1;
+        CarType = 0;
     }
 
     public void BlueCar()
     {
-        CarType = 2;
+        CarType = 1;
     }
 }

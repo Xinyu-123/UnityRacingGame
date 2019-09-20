@@ -6,7 +6,7 @@ using UnityStandardAssets.Vehicles.Car;
 
 public class RaceFinish : MonoBehaviour
 {
-    public GameObject MyCar, FinishCam, ViewModes, CompleteTrig;
+    public GameObject MyCar, FinishCam, ViewModes;
     public AudioSource LevelMusic, FinishMusic;
 
     public GameObject MinuteDisplay, SecondDisplay, MilliDisplay, LapTimes;
@@ -49,7 +49,6 @@ public class RaceFinish : MonoBehaviour
 
         this.GetComponent<BoxCollider>().enabled = false;
         MyCar.SetActive(false);
-        CompleteTrig.SetActive(false);
         CarController.m_Topspeed = 0.0f;
         MyCar.GetComponent<CarController>().enabled = false;
         MyCar.GetComponent<CarUserControl>().enabled = false;
